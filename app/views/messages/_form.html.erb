@@ -16,16 +16,29 @@
     </div>
   <% end %>
 
-  <div class="form-group">
+<div class="row form-group">
+  
+  <div class="col-sm-12">
     <label for="message_name">名前</label>
     <%#= f.label :name, "名前" %>
     <%= f.text_field :name, class: "form-control" %>
   </div>  
 
-  <div class="form-group">
-    <label for="message_body">内容</label>
-    <%= f.text_area :body, class: "form-control" %>
+  <div class="col-sm-2">
+       <label for="message_age">年齢 (半角数字)</label>
+       <%#= f.label :name, "年齢" %>
+       <%= f.text_field :age, class: "form-control" %>
   </div>
 
+  <div class="col-sm-12">
+   <label for = "message_body">内容</label>
+    <%= f.text_area :body, class: "form-control" %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-3">
   <%= f.submit class: "btn btn-sm btn-primary" %>
-<% end %>
+  <% end %>
+  </div>
+</div>
