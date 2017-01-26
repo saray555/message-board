@@ -1,3 +1,7 @@
+<!--
+部分テンプレートを表示するrenderメソッド:
+部分テンプレートは必ずアンダースコア（_）で始まる必要がある。
+-->
 <%= form_for(@message) do |f| %>
   <% if @message.errors.present? %>
     <div class="alert alert-danger">
